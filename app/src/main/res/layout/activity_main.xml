@@ -11,13 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Covid19 Tracker"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:id="@+id/toolbar"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -25,6 +26,7 @@
             android:layout_height="wrap_content"
             android:text="STATE/UT"
             android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
@@ -34,6 +36,7 @@
             android:layout_height="wrap_content"
             android:text="CONFIRMED"
             android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@android:color/holo_red_dark"/>
@@ -44,6 +47,7 @@
             android:text="ACTIVE"
             android:layout_marginLeft="5dp"
             android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
             android:textSize="15sp"
             android:textColor="@android:color/holo_blue_dark"/>
 
@@ -53,6 +57,7 @@
             android:text="RECOVERED"
             android:textStyle="bold"
             android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
             android:textColor="@android:color/holo_green_dark"/>
 
@@ -60,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DIED"
+            android:layout_gravity="center_horizontal"
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:textSize="15sp"
@@ -71,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mainRv"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         tools:itemCount="5"/>
 
 </LinearLayout>

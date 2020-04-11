@@ -38,6 +38,9 @@ class CountryAdapter(val list: List<StatewiseItem>):
                 customTv3.text =  user.active.toString()
                 customTv4.text =  user.recovered.toString()
                 customTv5.text =  user.deaths.toString()
+                deltaTv2.text = user.deltaconfirmed.toString()
+                deltaTv4.text = user.deltarecovered.toString()
+                deltaTv5.text = user.deltadeaths.toString()
 
 //                Picasso.get().load("https://image.tmdb.org/t/p/w500" + user.posterPath.toString()).into(sliderIv)
                 setOnClickListener{
