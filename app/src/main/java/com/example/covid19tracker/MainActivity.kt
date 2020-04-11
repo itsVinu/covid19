@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setSupportActionBar(toolbar)
+
 
         mainRv.apply {
             layoutManager = LinearLayoutManager(this@MainActivity,RecyclerView.VERTICAL,false)
